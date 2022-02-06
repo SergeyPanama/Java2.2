@@ -2,17 +2,18 @@ public class Main {
 
     public static void main(String[] args) {
         //вводные данные
-        int balance = 500;
-        int amount = 2000;
+        int balance = 100;
+        int amount = 1100;
         boolean payment = true;
 
         //логика
-        int percent;
-        if (payment) {
-            percent = 1;
-        } else {
-            percent = 0;
-        }
+//        int percent;
+//        if (payment) {
+//            percent = 1;
+//        } else {
+//            percent = 0;
+//        }
+        int percent = payment ? 1 : 0;
         int bonus = amount * percent / 100;
 
         if (bonus < 11) {
